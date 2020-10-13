@@ -1,4 +1,64 @@
-html {
+@font-face {
+    font-family: "Croissant One";
+    src: url(../styles/fonts/CroissantOne-Regular.ttf)
+    
+  }
+  
+  @font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/worksans/v8/QGY9z_wNahGAdqQ43Rh_ebrnlwyYfEPxPoGU7Gs5pIfY.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/worksans/v8/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/worksans/v8/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Merriweather Italic'), local('Merriweather-Italic'), url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZOf-I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  html {
     font-size: 18px;
   }
   
@@ -26,7 +86,7 @@ html {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
     font-family: Verdana, sans-serif;
     font-size: .77rem;
-    font-weight: bold:
+    font-weight: bold;
   }
   
   .header .logo {
@@ -74,12 +134,14 @@ html {
     font-size: 1.44rem;
     letter-spacing: 2px;
     font-weight: 500;
+    font-family: "Work Sans", Arial, sans-serif;
   }
   
   .banner h1 {
     padding-top: 1.11rem;
     font-size: 11rem;
     font-weight: 900;
+    font-family: "Abril Fatface", sans-serif;
   }
   
   @media only screen and (max-width: 750px) {
@@ -129,6 +191,7 @@ html {
   
   .photo .caption {
     font-style: italic;
+    font-family: Merriweather, serif;
   }
   
   .photo.first {
@@ -141,6 +204,7 @@ html {
     padding-bottom: 2.77rem;
     font-size: 1.5rem;
     line-height: 1.4;
+    font-family: "Work Sans", serif;
   }
   
   .journal .first-letter {
@@ -149,7 +213,7 @@ html {
     font-family: "Abril Fatface", serif;
     font-size: 7.44rem;
     color: #10b0d8;
-    line-height: 87%;
+    line-height: 0.87;
   }
   
   .quote {
@@ -161,6 +225,7 @@ html {
     text-align: center;
     font-size: 3.55rem;
     font-weight: 800;
+    line-height: 1.2;
   }
   
   @media only screen and (max-width: 680px) {
@@ -176,6 +241,7 @@ html {
     align-items: center;
     padding: 0 1%;
     background-color: #212121;
+    font-family: "Croissant One", "Merriweather", serif;
   }
   
   footer .image-container {
@@ -186,6 +252,7 @@ html {
     flex-grow: 1;
     font-style: italic;
     color: #9b9b9b;
+    line-height: 1.5;
   }
   
   footer p {
